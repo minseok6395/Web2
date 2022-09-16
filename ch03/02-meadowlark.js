@@ -1,12 +1,12 @@
 const express = require('express')
-const expressHandlevars = require('express-handlebars')
-const app =express()
+const expressHandlebars = require('express-handlebars')
+const app = express()
 
 // 핸들바 뷰 엔진 설정
 app.engine('handlebars', expressHandlebars({
     defaultLayout: 'main',
 }))
-app.use('view engine', 'handlebars')
+app.set('view engine', 'handlebars')
 
 app.use(express.static(__dirname + '/public'))
 
@@ -18,17 +18,15 @@ app.get('/about', (req, res) => res.render('about'))
 
 // custonm 404 page
 app.use((req, res) => {
-    res.type('text/plain')
     res.status(404)
-    res.send('404 - Not Found')
+    res.send('404')
 })
 
 // custom 500 page
 app.use((err, req, res, next) => {
     console.error(err.message)
-    res.type('text/plain')
     res.status(500)
-    res.send('500 - Sever Error')
+    res.send('500')
 })
 
 app.listen(port, () => console.log(

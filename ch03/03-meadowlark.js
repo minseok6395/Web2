@@ -1,11 +1,10 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
-
 const app = express()
 
-// configure Handlebars view engine
+// 핸들바 뷰 엔진 설정
 app.engine('handlebars', expressHandlebars({
-  defaultLayout: 'main',
+    defaultLayout: 'main',
 }))
 app.set('view engine', 'handlebars')
 
