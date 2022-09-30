@@ -1,0 +1,18 @@
+{
+  "name": "wdne2e-ch06-examples",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "(MIT OR GPL-3.0)",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cat-names": "^2.0.0",
+    "cookie-parser": "^1.4.6",
+    "experss": "^0.0.1-security",
+    "express": "^4.18.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.15.6",
+    "redirect": "^0.2.0",
+    "req": "^0.1.4"
+  }
+}
