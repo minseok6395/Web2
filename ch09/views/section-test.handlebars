@@ -1,0 +1,14 @@
+{{#section 'head'}}
+  <!--  구글이 이 페이지를 무시하게 만듭니다 -->
+  <meat name="robots" content="noindex"></meat>
+{{/section}}
+
+<h1>Test page</h1>
+<p>We're testing some script stuff.</p>
+
+{{#section 'scripts'}}
+  <script>
+    document.querySelector('body')
+      .insertAdjacentHTML('beforeEnd', '<small>(scripting works!)</small>')
+  </script>
+{{/section}}

@@ -1,9 +1,11 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
 const multiparty = require('multiparty')
+const cookieParser = require('cookie-parsers')
 
 const handlers = require('./lib/handlers')
 const weatherMiddlware = require('./lib/middleware/weather')
+const flashMiddleware = require('./lib/middleware/flash')
 
 const app = express()
 
@@ -31,6 +33,7 @@ app.use(express.static(__dirname + '/node_modules/jquery/dist'))
 app.use(express.static(__dirname + '/node_modules/popper.js/dist'))
 
 app.use(weatherMiddlware)
+app.use(flashMiddleware)
 
 app.get('/', handlers.home)
 
