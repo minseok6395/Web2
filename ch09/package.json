@@ -12,12 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ajax": "^0.0.4",
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
-    "jquery": "^3.6.1",
-    "multiparty": "^4.2.3",
-    "popper": "^1.0.1"
+    "express-session": "^1.17.3"
   }
 }
