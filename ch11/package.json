@@ -1,0 +1,22 @@
+{
+  "name": "ch11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "00-smtp.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "credentials": "^3.0.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mailer": "^0.6.7",
+    "nodemailer": "^6.8.0",
+    "sendgrid": "^5.2.3"
+  }
+}
