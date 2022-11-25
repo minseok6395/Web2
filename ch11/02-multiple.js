@@ -4,11 +4,11 @@ const api_key = process.env.SENDGRID_API_KEY || credentials.sendgrid.password
 sgMail.setApiKey(api_key)
 
 const msg = {
-    to: 'minseok6395@naver.com',
-    from: 'minseok6395@naver.com',
-    subject: 'Sending with SendGrid is Fun',
-    text: 'send using Node.js at home PC.',
-    html: '<strong>sent using Node.js at home PC.</strong>',
+  to: ['minseok6395@naver.com', 'minseok030426@gmail.com'],
+  from: 'minseok6395@naver.com',
+  subject: 'Sendgin to multiple recipants',
+  text: 'sent using Node.js at home PC.',
+  html: '<strong>sent using Node.js at home PC.</strong>',
 }
 
 sgMail
